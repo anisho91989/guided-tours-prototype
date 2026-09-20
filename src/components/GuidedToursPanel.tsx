@@ -44,6 +44,10 @@ const c = {
 
 const R = 4;
 
+// Uniformly enlarges the panel (text + spacing). The root box is divided by
+// this factor and zoomed back so it still anchors at the same artboard rect.
+const FONT_SCALE = 1.18;
+
 const ENHANCED_SUMMARY =
   "Identify material constraints across the supply network, quantify their impact on demand " +
   "fulfillment, and evaluate resolution scenarios — alternate sourcing, expedites, and rebalancing — " +
@@ -104,10 +108,11 @@ export function GuidedToursPanel(props: PanelProps) {
     <div
       className="arvo-scroll absolute flex flex-col overflow-y-auto"
       style={{
-        left: PANEL.left,
-        top: PANEL.top,
-        width: PANEL.width,
-        height: PANEL.height,
+        left: PANEL.left / FONT_SCALE,
+        top: PANEL.top / FONT_SCALE,
+        width: PANEL.width / FONT_SCALE,
+        height: PANEL.height / FONT_SCALE,
+        zoom: FONT_SCALE,
         background: c.layer01,
         borderLeft: `1px solid ${c.divider}`,
         fontFamily: "var(--arvo-font-family)",
