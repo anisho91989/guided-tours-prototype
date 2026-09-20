@@ -1,0 +1,52 @@
+/* o9 (Arvo) design tokens — registers all --arvo-* CSS variables */
+@import "@o9/design-tokens/css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* o9 Sans is not bundled with the tokens package; use a close system fallback
+   until the real webfont is provided. Swap the @font-face in when available. */
+:root {
+  --app-font: var(--arvo-font-family);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--app-font);
+  background: var(--arvo-color-s-base);
+  color: var(--arvo-color-t-primary);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@keyframes arvoPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 3px var(--arvo-content-theme-dark);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 7px var(--arvo-content-theme-dark);
+    opacity: 0.55;
+  }
+}
+
+/* Thin o9-style scrollbars inside the coded panel */
+.arvo-scroll::-webkit-scrollbar {
+  width: var(--arvo-scroll-width);
+  height: var(--arvo-scroll-width);
+}
+.arvo-scroll::-webkit-scrollbar-thumb {
+  background: var(--arvo-color-s-layer-07);
+  border-radius: 999px;
+}
+.arvo-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}

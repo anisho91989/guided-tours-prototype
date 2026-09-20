@@ -1,0 +1,39 @@
+{
+  "name": "@o9/design-tokens",
+  "version": "0.1.0",
+  "description": "o9 Design System (Arvo Foundation) design tokens — CSS variables, JSON, typed TS, and a Tailwind preset. Resolved light-theme values extracted from Figma (Simulator-UX).",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "main": "./tokens.ts",
+  "types": "./tokens.ts",
+  "exports": {
+    ".": {
+      "types": "./tokens.ts",
+      "import": "./tokens.ts",
+      "default": "./tokens.ts"
+    },
+    "./css": "./tokens.css",
+    "./json": "./design-tokens.json",
+    "./semantic": "./semantic-tokens.json",
+    "./tailwind-preset": "./tailwind-preset.js"
+  },
+  "files": [
+    "tokens.ts",
+    "tokens.css",
+    "design-tokens.json",
+    "semantic-tokens.json",
+    "tailwind-preset.js",
+    "README.md"
+  ],
+  "keywords": [
+    "o9",
+    "arvo",
+    "design-system",
+    "design-tokens",
+    "figma"
+  ],
+  "sideEffects": [
+    "*.css"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "$meta": {
+    "name": "o9 Design System (Arvo) — Semantic Color Structure",
+    "source": "Enumerated via Figma search_design_system against 'Arvo Foundation Library - Design System' (variableCollection: Theme)",
+    "important": "The Figma search API returns token NAMES/scopes but NOT resolved values. Values below are filled ONLY where a real resolved value was obtained via get_variable_defs. `value: null` means the token exists in the library but its hex was not resolvable from this consumer file. Do NOT guess these — resolve them from the Arvo Foundation source file (Figma variable export or Tokens Studio).",
+    "collection": "Theme"
+  },
+  "color": {
+    "surface": {
+      "theme": null,
+      "theme-2": null,
+      "brand": null,
+      "positive-strong": null,
+      "positive-subtle": null,
+      "negative": null,
+      "negative-strong": null,
+      "negative-subtle": null,
+      "negative-static": null,
+      "negative-hover": null,
+      "negative-active": null,
+      "info-strong": null,
+      "info-subtle": null,
+      "util/green-dark": null,
+      "util/green-subtle": null,
+      "util/green-static": null,
+      "util/blue-dark": null,
+      "util/blue-subtle": null,
+      "util/blue-static": null
+    },
+    "text": {
+      "positive": null,
+      "negative": "#bc1227",
+      "info-dark": "#002ed2",
+      "info-light": null,
+      "util/green": null,
+      "util/blue": null
+    },
+    "icon": {
+      "positive": null,
+      "negative": null,
+      "negative-static": null,
+      "info-dark": "#002ed2",
+      "info-light": null,
+      "util/green": null,
+      "util/blue": null
+    },
+    "border": {
+      "positive": null,
+      "negative": null,
+      "info": null,
+      "util/green": null,
+      "util/green-static": null,
+      "util/blue": null,
+      "util/blue-static": null
+    }
+  },
+  "notes": {
+    "warning": "No 'warning' semantic color family exists in the Arvo Theme collection (search returned empty).",
+    "descriptions": {
+      "surface/*-subtle": "Background for form inputs (text boxes, alerts, badges).",
+      "surface/theme": "Theme background for left sidebar, Gen AI logo, primary buttons, checked checkbox/radio states. Adapts to theme primary color.",
+      "border/negative": "negative-hover; negative-focus; error",
+      "border/util/*": "for custom appearance"
+    }
+  }
+}

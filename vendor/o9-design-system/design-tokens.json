@@ -1,0 +1,146 @@
+{
+  "$meta": {
+    "name": "o9 Design System (Arvo Foundation)",
+    "source": "Figma file GIlXHDQch46RLQRqg33tw7 — Simulator-UX",
+    "library": "Arvo Foundation Library - Design System",
+    "note": "Resolved light-theme values. o9ds-* is the legacy prefix for arvo-*; both resolve identically. Color values for semantic tokens are theme-adaptive in Figma; hexes below are the default theme resolution.",
+    "extractedFrom": "node 8921-16649"
+  },
+  "typography": {
+    "fontFamily": "o9 Sans",
+    "weights": { "regular": 400, "medium": 500 },
+    "fontSize": {
+      "10": "10px",
+      "12": "12px",
+      "14": "14px",
+      "16": "16px",
+      "18": "18px"
+    },
+    "lineHeight": {
+      "14": "14px",
+      "16": "16px",
+      "20": "20px",
+      "24": "24px"
+    },
+    "textStyles": {
+      "h18-r": { "size": "18px", "weight": 400, "lineHeight": "100%" },
+      "h16-m": { "size": "16px", "weight": 500, "lineHeight": "100%" },
+      "h14-m": { "size": "14px", "weight": 500, "lineHeight": "100%" },
+      "h12-r": { "size": "12px", "weight": 400, "lineHeight": "100%" },
+      "l14-r": { "size": "14px", "weight": 400, "lineHeight": "100%" },
+      "l12-r": { "size": "12px", "weight": 400, "lineHeight": "100%" },
+      "l10-r": { "size": "10px", "weight": 400, "lineHeight": "100%" },
+      "p12-r": { "size": "12px", "weight": 400, "lineHeight": "100%" },
+      "p10-r": { "size": "10px", "weight": 400, "lineHeight": "100%" }
+    }
+  },
+  "spacing": {
+    "1": "1px",
+    "2": "2px",
+    "4": "4px",
+    "6": "6px",
+    "8": "8px",
+    "10": "10px",
+    "12": "12px",
+    "16": "16px",
+    "24": "24px"
+  },
+  "radius": {
+    "none": "0px",
+    "16": "16px"
+  },
+  "borderWidth": {
+    "thin": "1px",
+    "1": "1px",
+    "2": "2px",
+    "thickest": "4px"
+  },
+  "iconSize": {
+    "14": "14px",
+    "16": "16px",
+    "20": "20px",
+    "32": "32px"
+  },
+  "color": {
+    "text": {
+      "primary": "#010101",
+      "secondary": "#303030",
+      "tertiary": "#4c4c4c",
+      "neutral": "#010101",
+      "theme": "#010101",
+      "hover": "#010101",
+      "inverse": "#ffffff",
+      "disabled": "#b2b2b2",
+      "placeholder": "#666666",
+      "negative": "#bc1227",
+      "info-dark": "#002ed2",
+      "form-label": "#303030",
+      "form-value": "#202020",
+      "active": "#ffffff",
+      "active-inverse": "#010101",
+      "white-static": "#ffffff"
+    },
+    "icon": {
+      "primary": "#010101",
+      "secondary": "#303030",
+      "tertiary": "#4c4c4c",
+      "neutral": "#010101",
+      "theme": "#010101",
+      "active": "#010101",
+      "inverse": "#ffffff",
+      "disabled": "#b2b2b2",
+      "info-dark": "#002ed2",
+      "white-static": "#ffffff"
+    },
+    "surface": {
+      "theme": "#010101",
+      "brand": "#f2f2f2",
+      "base": "#f2f2f2",
+      "inverse": "#010101",
+      "neutral": "#010101",
+      "readonly": "#f2f2f2",
+      "layer-01": "#ffffff",
+      "layer-02": "#202020",
+      "layer-03": "#ffffff",
+      "layer-04": "#f2f2f2",
+      "layer-05": "#f2f2f2",
+      "layer-07": "#cccccc",
+      "theme-active-2": "#e5e5e5",
+      "theme-hover-4": "#e5e5e5",
+      "placeholder-2": "#4c4c4c",
+      "shadow-static-1": "#4c4c4c33"
+    },
+    "border": {
+      "divider": "#e5e5e5",
+      "theme": "#010101",
+      "theme-active": "#010101",
+      "form": "#949494",
+      "active-static": "#808080",
+      "base": "#f2f2f2",
+      "subtle": "#f2f2f2",
+      "inverse": "#f2f2f2",
+      "focus-inverse": "#ffffff"
+    },
+    "content": {
+      "theme-dark": "#004696"
+    }
+  },
+  "effects": {
+    "shadow-down": {
+      "type": "drop-shadow",
+      "offsetX": "0px",
+      "offsetY": "10px",
+      "blur": "20px",
+      "spread": "0px",
+      "color": "#4c4c4c33",
+      "css": "0 10px 20px 0 #4c4c4c33"
+    }
+  },
+  "layout": {
+    "container-btn-min": "112px",
+    "actionmenu-wmin": "160px",
+    "actionmenu-wmax": "400px",
+    "popover-hmax": "900px",
+    "scroll-width": "8px"
+  }
+}

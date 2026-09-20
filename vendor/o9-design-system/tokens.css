@@ -1,0 +1,208 @@
+/* =====================================================================
+   o9 Design System — "Arvo" Foundation
+   Design tokens extracted from Figma: Simulator-UX
+   File: GIlXHDQch46RLQRqg33tw7
+   Source library: "Arvo Foundation Library - Design System"
+
+   Notes:
+   - The design system was renamed o9ds -> arvo. Both prefixes resolve to
+     the same values in Figma. Canonical variables below use --arvo-*,
+     with --o9ds-* aliases kept for backwards compatibility.
+   - Values are the resolved light-theme values. Semantic color tokens
+     (surface / text / icon / border) are theme-adaptive in Figma; the
+     hexes here are the default theme resolution.
+   ===================================================================== */
+
+:root {
+  /* ---------------------------------------------------------------
+     TYPOGRAPHY
+     --------------------------------------------------------------- */
+  --arvo-font-family: "o9 Sans", system-ui, -apple-system, sans-serif;
+  --arvo-weight-regular: 400;
+  --arvo-weight-medium: 500;
+
+  --arvo-font-size-10: 10px;
+  --arvo-font-size-12: 12px;
+  --arvo-font-size-14: 14px;
+  --arvo-font-size-16: 16px;
+  --arvo-font-size-18: 18px;
+
+  --arvo-line-14: 14px;
+  --arvo-line-16: 16px;
+  --arvo-line-20: 20px;
+  --arvo-line-24: 24px;
+
+  /* ---------------------------------------------------------------
+     SPACING
+     --------------------------------------------------------------- */
+  --arvo-space-1: 1px;
+  --arvo-space-2: 2px;
+  --arvo-space-4: 4px;
+  --arvo-space-6: 6px;
+  --arvo-space-8: 8px;
+  --arvo-space-10: 10px;
+  --arvo-space-12: 12px;
+  --arvo-space-16: 16px;
+  --arvo-space-24: 24px;
+
+  /* ---------------------------------------------------------------
+     RADIUS
+     --------------------------------------------------------------- */
+  --arvo-radius-none: 0px;
+  --arvo-radius-16: 16px;
+
+  /* ---------------------------------------------------------------
+     BORDER WIDTH
+     --------------------------------------------------------------- */
+  --arvo-border-width-thin: 1px;
+  --arvo-border-1: 1px;
+  --arvo-border-2: 2px;
+  --arvo-border-width-thickest: 4px;
+
+  /* ---------------------------------------------------------------
+     ICON / IMAGE SIZE
+     --------------------------------------------------------------- */
+  --arvo-icon-14: 14px;
+  --arvo-icon-16: 16px;
+  --arvo-icon-20: 20px;
+  --arvo-icon-32: 32px;
+  --arvo-image-16: 16px;
+
+  /* ---------------------------------------------------------------
+     COLOR — TEXT (t)
+     --------------------------------------------------------------- */
+  --arvo-color-t-primary: #010101;
+  --arvo-color-t-secondary: #303030;
+  --arvo-color-t-tertiary: #4c4c4c;
+  --arvo-color-t-neutral: #010101;
+  --arvo-color-t-theme: #010101;
+  --arvo-color-t-hover: #010101;
+  --arvo-color-t-inverse: #ffffff;
+  --arvo-color-t-disabled: #b2b2b2;
+  --arvo-color-t-placeholder: #666666;
+  --arvo-color-t-negative: #bc1227;
+  --arvo-color-t-info-dark: #002ed2;
+  --arvo-color-t-form-label: #303030;
+  --arvo-color-t-form-value: #202020;
+  --arvo-color-t-active: #ffffff;
+  --arvo-color-t-active-inverse: #010101;
+  --arvo-color-t-white-static: #ffffff;
+
+  /* ---------------------------------------------------------------
+     COLOR — ICON (i)
+     --------------------------------------------------------------- */
+  --arvo-color-i-primary: #010101;
+  --arvo-color-i-secondary: #303030;
+  --arvo-color-i-tertiary: #4c4c4c;
+  --arvo-color-i-neutral: #010101;
+  --arvo-color-i-theme: #010101;
+  --arvo-color-i-active: #010101;
+  --arvo-color-i-inverse: #ffffff;
+  --arvo-color-i-disabled: #b2b2b2;
+  --arvo-color-i-info-dark: #002ed2;
+  --arvo-color-i-white-static: #ffffff;
+
+  /* ---------------------------------------------------------------
+     COLOR — SURFACE (s)
+     --------------------------------------------------------------- */
+  --arvo-color-s-theme: #010101;
+  --arvo-color-s-brand: #f2f2f2;
+  --arvo-color-s-base: #f2f2f2;
+  --arvo-color-s-inverse: #010101;
+  --arvo-color-s-neutral: #010101;
+  --arvo-color-s-readonly: #f2f2f2;
+  --arvo-color-s-layer-01: #ffffff;
+  --arvo-color-s-layer-02: #202020;
+  --arvo-color-s-layer-03: #ffffff;
+  --arvo-color-s-layer-04: #f2f2f2;
+  --arvo-color-s-layer-05: #f2f2f2;
+  --arvo-color-s-layer-07: #cccccc;
+  --arvo-color-s-theme-active-2: #e5e5e5;
+  --arvo-color-s-theme-hover-4: #e5e5e5;
+  --arvo-color-s-placeholder-2: #4c4c4c;
+  --arvo-color-s-shadow-static-1: #4c4c4c33;
+
+  /* ---------------------------------------------------------------
+     COLOR — BORDER (b)
+     --------------------------------------------------------------- */
+  --arvo-color-b-divider: #e5e5e5;
+  --arvo-color-b-theme: #010101;
+  --arvo-color-b-theme-active: #010101;
+  --arvo-color-b-form: #949494;
+  --arvo-color-b-active-static: #808080;
+  --arvo-color-b-base: #f2f2f2;
+  --arvo-color-b-subtle: #f2f2f2;
+  --arvo-color-b-inverse: #f2f2f2;
+  --arvo-color-b-focus-inverse: #ffffff;
+
+  /* ---------------------------------------------------------------
+     COLOR — CONTENT / MISC
+     --------------------------------------------------------------- */
+  --arvo-content-theme-dark: #004696;
+
+  /* ---------------------------------------------------------------
+     EFFECTS
+     --------------------------------------------------------------- */
+  --arvo-shadow-down: 0 10px 20px 0 var(--arvo-color-s-shadow-static-1);
+
+  /* ---------------------------------------------------------------
+     LAYOUT CONSTANTS
+     --------------------------------------------------------------- */
+  --arvo-container-btn-min: 112px;
+  --arvo-actionmenu-wmin: 160px;
+  --arvo-actionmenu-wmax: 400px;
+  --arvo-popover-hmax: 900px;
+  --arvo-scroll-width: 8px;
+}
+
+/* =====================================================================
+   TYPOGRAPHY UTILITY CLASSES
+   Named to match the Figma type styles (heading / label / paragraph).
+   Line-height in Figma is 100% (== font size) for these tokens.
+   ===================================================================== */
+.arvo-h18-r { font-family: var(--arvo-font-family); font-weight: var(--arvo-weight-regular); font-size: var(--arvo-font-size-18); line-height: 100%; }
+.arvo-h16-m { font-family: var(--arvo-font-family); font-weight: var(--arvo-weight-medium);  font-size: var(--arvo-font-size-16); line-height: 100%; }
+.arvo-h14-m { font-family: var(--arvo-font-family); font-weight: var(--arvo-weight-medium);  font-size: var(--arvo-font-size-14); line-height: 100%; }
+.arvo-h12-r { font-family: var(--arvo-font-family); font-weight: var(--arvo-weight-regular); font-size: var(--arvo-font-size-12); line-height: 100%; }
+.arvo-l14-r { font-family: var(--arvo-font-family); font-weight: var(--arvo-weight-regular); font-size: var(--arvo-font-size-14); line-height: 100%; }
+.arvo-l12-r { font-family: var(--arvo-font-family); font-weight: var(--arvo-weight-regular); font-size: var(--arvo-font-size-12); line-height: 100%; }
+.arvo-l10-r { font-family: var(--arvo-font-family); font-weight: var(--arvo-weight-regular); font-size: var(--arvo-font-size-10); line-height: 100%; }
+.arvo-p12-r { font-family: var(--arvo-font-family); font-weight: var(--arvo-weight-regular); font-size: var(--arvo-font-size-12); line-height: 100%; }
+.arvo-p10-r { font-family: var(--arvo-font-family); font-weight: var(--arvo-weight-regular); font-size: var(--arvo-font-size-10); line-height: 100%; }
+
+/* =====================================================================
+   LEGACY ALIASES (--o9ds-*)  ->  canonical (--arvo-*)
+   Keep these so older markup that references o9ds tokens still resolves.
+   ===================================================================== */
+:root {
+  --o9ds-font-family: var(--arvo-font-family);
+  --o9ds-space-4: var(--arvo-space-4);
+  --o9ds-space-6: var(--arvo-space-6);
+  --o9ds-space-8: var(--arvo-space-8);
+  --o9ds-space-10: var(--arvo-space-10);
+  --o9ds-space-12: var(--arvo-space-12);
+  --o9ds-space-16: var(--arvo-space-16);
+  --o9ds-radius-none: var(--arvo-radius-none);
+  --o9ds-radius-16: var(--arvo-radius-16);
+  --o9ds-border-1: var(--arvo-border-1);
+  --o9ds-border-2: var(--arvo-border-2);
+
+  --o9ds-color-t-secondary: var(--arvo-color-t-secondary);
+  --o9ds-color-t-tertiary: var(--arvo-color-t-tertiary);
+  --o9ds-color-i-secondary: var(--arvo-color-i-secondary);
+  --o9ds-color-i-tertiary: var(--arvo-color-i-tertiary);
+  --o9ds-color-i-inverse: var(--arvo-color-i-inverse);
+  --o9ds-color-i-theme: var(--arvo-color-i-theme);
+  --o9ds-color-i-disabled: var(--arvo-color-i-disabled);
+  --o9ds-color-s-theme: var(--arvo-color-s-theme);
+  --o9ds-color-s-inverse: var(--arvo-color-s-inverse);
+  --o9ds-color-s-layer-01: var(--arvo-color-s-layer-01);
+  --o9ds-color-s-layer-04: var(--arvo-color-s-layer-04);
+  --o9ds-color-s-layer-05: var(--arvo-color-s-layer-05);
+  --o9ds-color-s-readonly: var(--arvo-color-s-readonly);
+  --o9ds-color-s-base: var(--arvo-color-s-base);
+  --o9ds-color-b-divider: var(--arvo-color-b-divider);
+  --o9ds-color-b-theme: var(--arvo-color-b-theme);
+  --o9ds-color-b-theme-active: var(--arvo-color-b-theme-active);
+  --o9ds-color-b-active-static: var(--arvo-color-b-active-static);
+}
